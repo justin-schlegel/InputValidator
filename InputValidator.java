@@ -25,10 +25,9 @@ public class Test {
 				scanner.close();
 				System.exit(0);
 			}
-			
 			boolean isInputValid = userInput.matches("[a-zA-Z0-9]{8,}$");
 			
-			if (isInputValid == true) System.out.println("You entered " + '"'+userInput+'"' + ", an excellent choice.");
+			if (isInputValid) System.out.println("You entered " + '"'+userInput+'"' + ", an excellent choice.");
 			else System.out.println("Now you've gone and done it all wrong! Enter 8 or more alphanumeric characters!");
 		}
 	}
